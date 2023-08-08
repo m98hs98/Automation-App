@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+Automation App README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introduction
 
-## Available Scripts
+Welcome to the Automation App! This React application helps users search and rank various URLs based on specific domain keywords.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Filtered Searches: Avoid common and unwanted URLs using our preset filter. For example, results from domains like 'googleusercontent.com' and 'google.com.au' are filtered out.
+Search for a Specific Domain: Enter the domain you want to search for without prefixes such as 'https://' or 'www.'.
+Specify Number of Results: Choose how many results you'd like to inquire about.
+Visual Ranking: View the rank of your domain amidst the search results.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+How to Use
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Setting Desired Result Count:
+Look for the section titled "Results count that you want to enquire".
+Use the input box to enter a number between 10 and 50. This number indicates how many search results you wish to look into.
+Entering Keywords:
+Navigate to the "Keywords" section.
+Use the provided input box to type any keyword you want to search for. 
+Inputting Your Domain:
+Jump to the "Your website" section.
+Enter your domain name in the input box. Remember, you don't need 'https://' or 'www.'.
+If your domain is invalid, you'll see a helpful error message in red.
+Initiate the Search:
+Once you've filled out your desired result count and domain, click the "Search" button.
+You'll then see a list of search results, showing how your domain ranks amidst them.
 
-### `npm test`
+Under the Hood
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This application uses the React framework.
+We maintain a list of filtered strings to keep out undesired search results.
+The app uses regular expressions to validate and extract URLs.
+Search results are fetched from Google/Page0X.html (where X is the page number) and processed to derive meaningful rankings.
+User inputs are managed using React's useState hooks.
+Search results fetching is managed using React's useEffect hook.
 
-### `npm run build`
+Code Comments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the provided code, you'll find comments that help explain specific blocks of logic. For example:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+There's a commented-out block showing the "Found URLs for page X" feature, which seems to be in development or for debug purposes. Uncommenting it would display the raw results from the search.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Wrapping Up
 
-### `npm run eject`
+The Automation App offers an intuitive interface and a backend that effectively filters and ranks search results. Whether you're looking to see how your website ranks or just curious about the domains that show up for a specific keyword, this tool can help. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy searching!# Automation-App
